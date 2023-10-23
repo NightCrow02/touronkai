@@ -8,12 +8,12 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="login-box">
+    <div class="register-box">
         <form action="">
             <h2>Login</h2>
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="password" placeholder="Password">
-            <input type="button" value="Log In">
+            <input type="button" value="Register">
         </form>
         
     </div>
