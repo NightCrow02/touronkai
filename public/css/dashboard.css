@@ -1,14 +1,15 @@
 .box{
     width: 675px;
     height: 550px;
-    margin-top: 120px;
-    margin-left: auto;
+    margin-top: 100px;
+    margin-left: 400px;
     margin-right: auto;
     margin-bottom: auto;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
     align-content: center;
+    float: left;
 }
 .header-box{
     width: 675px;
@@ -16,6 +17,7 @@
     flex-shrink: 0;
     border-radius: 20px;
     background: #A95173;
+    float: left;
 }
 h1{
     color: #FFF;
@@ -25,4 +27,43 @@ h1{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.groups-box{
+    width: 255px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    float: right;
+}
+
+.header-box2{
+    width: 255px;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #A95173;
+    float: right;
+}
+
+.contacts-box{
+    width: 255px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 80px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    float: right;
+}
+
+.header-box3{
+    width: 255px;
+    height: 79px;
+    flex-shrink: 0;
+    background: #A95173;
+    float: right;
+    border-radius: 20px;
 }
