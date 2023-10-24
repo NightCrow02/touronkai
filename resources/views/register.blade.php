@@ -18,7 +18,7 @@
             <input type="password" name="password" placeholder="Password" required>
             <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
             <p>Already have an account? <a href="login">Log in</a></p>
-            <button class="regButton" type="submit">Register</button>
+            <button class="regButton" type="submit" id="loginREG-button">Register</button>
         </form>
         
     </div>

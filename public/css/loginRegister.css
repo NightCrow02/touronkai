@@ -1,5 +1,6 @@
 h2{
     text-align: center;
+    font-family: SF Pro Display;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -41,3 +42,18 @@ form button{
     background-color: white;
     border-radius: 50px;
 }
+
+#loginREG-button{
+    background-color: #D885A3; /* Change the background color to blue */
+    color: #fff; /* Change the text color to white */
+    border: 2px solid #A95173; /* Add a border */
+    padding: 10px 20px; /* Adjust padding for spacing */
+    font-size: 16px; /* Change the font size */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor on hover */
+}
+
+#loginREG-button:hover {
+    background-color: #A95173; /* Change background color on hover */
+    color: #fff; /* Change text color on hover (can remain the same) */
+  }
