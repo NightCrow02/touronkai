@@ -10,10 +10,14 @@
 <body>
     <div class="register-box">
         <form action="">
-            <h2>Login</h2>
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <input type="button" value="Register">
+            <h2>Register</h2>
+            <input type="name" name="name" placeholder="Name" required>
+            <input type="username" name="userName" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <p>Already have an account? <a href="login">Log in</a></p>
+            <button class="regButton" type="submit">Register</button>
         </form>
         
     </div>
