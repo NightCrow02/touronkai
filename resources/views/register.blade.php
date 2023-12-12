@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{ URL::asset('css/master.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/loginRegister.css') }}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    @include('layout.head')
+    <title>Register | Touronkai</title>
 </head>
 <body>
     <div class="register-box">
@@ -20,7 +16,7 @@
             <p>Already have an account? <a href="login">Log in</a></p>
             <button class="regButton" type="submit">Register</button>
         </form>
-        
     </div>
+    @include('layout.footer')
 </body>
 </html>

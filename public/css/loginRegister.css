@@ -1,7 +1,10 @@
 h2{
     text-align: center;
+    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: var(--blood-red);
+    border-radius: 10px;
 }
 
 form{
@@ -25,19 +28,21 @@ form button{
 .login-box{
     margin: auto;
     margin-top: 10%;
+    margin-bottom: 10%;
     height: 325px;
     width: 35%;
     padding: 10px;
-    background-color: white;
-    border-radius: 50px;
+    background-color: var(--antique-white);
+    border-radius: 10px;
 }
 
 .register-box{
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 10%;
     height: 480px;
     width: 35%;
     padding: 10px;
-    background-color: white;
-    border-radius: 50px;
+    background-color: var(--antique-white);
+    border-radius: 10px;
 }
