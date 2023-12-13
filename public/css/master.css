@@ -20,11 +20,24 @@ body{
     column-gap: 30px;
 }
 
+header{
+    grid-column: span 3;
+    background: #680202;
+}
+
 footer{
     background-color: var(--blood-red);
     color: white;
     text-align: center;
     min-height: 80px;
+}
+
+.icons-header {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 footer p {
@@ -48,6 +61,14 @@ nav a{
     margin: 0 auto;
     text-decoration: none;
     font-weight: 600;
+}
+
+nav p{
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    font-weight: 800;
+    padding-bottom: 10px;
 }
 
 nav ul{
