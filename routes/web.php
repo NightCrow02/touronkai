@@ -31,3 +31,7 @@ Route::get('/register', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+
+Route::get('/groups', function () {
+    return view('groups');
+});
