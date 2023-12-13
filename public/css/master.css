@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-:root{
-    --cool-gray: #8A83B6ff;
-    --blood-red: #680202ff;
-    --rebecca-purple: #5F3793ff;
-    --caramel: #BF8344ff;
-    --antique-white: #FAEBD7ff;
-    --eggplant: #6F3D54ff;
+
+ul, li{
+    padding: 0;
+    list-style-type: none;
 }
+
 
 body{
-    background: var(--cool-gray);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #8C85B9;
+    margin: 0;
 }
+
 
 .grid-container{
     display: grid;
@@ -20,16 +20,10 @@ body{
     column-gap: 30px;
 }
 
+
 header{
     grid-column: span 3;
     background: #680202;
-}
-
-footer{
-    background-color: var(--blood-red);
-    color: white;
-    text-align: center;
-    min-height: 80px;
 }
 
 .icons-header {
@@ -40,8 +34,28 @@ footer{
     margin-bottom: 20px;
 }
 
-footer p {
-    padding: 50px;
+.icons-header .fa-address-book-o{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.icons-header .fa-users{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.icons-header .fa-envelope-o{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.icons-header .fa-user-o{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
 }
 
 nav{
@@ -53,36 +67,272 @@ nav{
     border-radius: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
+    box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -webkit-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -moz-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
 }
+
 
 nav a{
     display: flex;
+    text-decoration: none;
     justify-content: center;
-    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav li:hover{
+    background: #680202;
+    border-radius: 10px;
+    transition-delay: .1s;
+}
+
+nav li a:hover{
+    color: #ffffff;
+    transition-delay: .1s;
+}
+
+
+article{
+    margin-top: 10px;
+    align-self: start;
+    display: grid; 
+    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -webkit-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -moz-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+}
+
+article .friend-list{
+    grid-column: span 3;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+article .friend-list img{
+    width: 10%;
+}
+
+aside{
+    padding: 50px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: #680202;
+    padding: 0px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+article h2{
+    display: flex;
+    justify-content: center;
+    background-color: #680202;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.groups, .contacts {
+    margin-bottom: 200px;
+}
+
+
+.friend-list {
+    margin-top: 20px;
+}
+
+.friend-list ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.friend-list li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    
+}
+
+.friend-list li:active {
+    transform: scale(0.99); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+
+}
+
+.friend-list li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.friend-list img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 50%;
+}
+
+.friend-list .friend-info {
+    flex-grow: 1;
+}
+
+.friend-list .friend-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-info .text-msg p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.friend-list h4 {
+    margin: 0;
+    color: #252525;
+    font-size: 15px;
+}
+
+
+.friend-list .timestamp {
+    color: #777;
+    font-size: 12px;
+    display: block;
+}
+
+footer{
+    grid-column: span 3;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+    color: #fff;
+    background-color: #680202;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+aside .groups{
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1px;
+    box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -webkit-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -moz-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+}
+
+
+aside .groups ul li:hover{
+    background-color: #680202;
+    border-radius: 10px;
+    transition-delay: .1s;
+    
+}
+
+
+aside .groups ul li a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
     text-decoration: none;
     font-weight: 600;
 }
 
-nav p{
-    display: flex;
-    font-size: larger;
-    justify-content: center;
-    font-weight: 800;
-    padding-bottom: 10px;
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
-}
-
-nav ul:hover{
-    background: #680202;
-    border-radius: 10px;
-    transition: opacity .5s;
-}
-
-nav ul a:hover{
+aside .groups ul li a:hover{
     color: #ffffff;
-    transition: opacity .5s;
+    transition-delay: .1s;
+
 }
+
+
+aside .groups p{
+    color: #680202;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+
+
+aside .contacts{
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1px;
+    box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -webkit-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+    -moz-box-shadow: -1px 7px 35px -6px rgba(0,0,0,0.88);
+}
+
+
+aside .contacts ul li div:hover{
+    background-color: #680202;
+    border-radius: 10px;
+    transition-delay: .1s;
+    color: #ffffff;
+    
+}
+
+
+aside .contacts ul li a{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+aside .contacts span{
+    display: flex;
+    justify-content: center;
+    color: #680202;
+    font-size: 10px;
+}
+
+
+
+aside .contacts a:hover {
+    color: white;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+
+aside .contacts li:hover span {
+    color: white;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+aside .contacts li:hover a {
+    color:#ffffff;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+aside .contacts p{
+    color: #680202;
+    padding-top: 10px;
+    font-size: 20px;
+}
+

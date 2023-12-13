@@ -2,6 +2,6 @@
 
 <footer>
     <div class="footer">
-        <p>Copyright 2023 @ NC2002</p>
+        <p>Copyrite 2023 @ The University Project</p>
     </div>
 </footer>
