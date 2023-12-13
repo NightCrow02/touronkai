@@ -63,7 +63,7 @@
 
         </article>
         
-        @include('layout.contactsnavbar')
+        @include('layout.rightnavbar')
     </div>
 
     @include('layout.footer')

@@ -124,6 +124,7 @@ aside{
 
 h1{
     display: flex;
+    margin-top: auto;
     justify-content: center;
     background-color: #680202;
     padding: 0px;

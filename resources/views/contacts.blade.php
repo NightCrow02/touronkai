@@ -52,7 +52,7 @@
 
         </article>
         
-        @include('layout.groupsnavbar')
+        @include('layout.rightnavbar')
     </div>
 
     @include('layout.footer')

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+
    @include('layout.head')
    <title>Login | Touronkai</title>
 </head>

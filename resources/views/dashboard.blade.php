@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <title>Document</title>
+    <title>Dashboard | Touronkai</title>
 </head>
 
 <body>
@@ -95,7 +95,7 @@
         </article>
 
         {{-- <aside> --}}
-            @include('layout.groupsnavbar')
+            @include('layout.rightnavbar')
             {{-- <div class="contacts">
                 <p><strong>Contacts</strong></p>
                 <ul>

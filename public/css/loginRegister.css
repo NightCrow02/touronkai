@@ -1,9 +1,10 @@
 h2{
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--blood-red);
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    background-color: #680202;
+    padding: 20px;
+    color: #ffffff;
     border-radius: 10px;
 }
 
@@ -32,7 +33,7 @@ form button{
     height: 325px;
     width: 35%;
     padding: 10px;
-    background-color: var(--antique-white);
+    background-color: antiquewhite;
     border-radius: 10px;
 }
 
@@ -43,6 +44,6 @@ form button{
     height: 480px;
     width: 35%;
     padding: 10px;
-    background-color: var(--antique-white);
+    background-color: antiquewhite;
     border-radius: 10px;
 }

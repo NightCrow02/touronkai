@@ -35,3 +35,11 @@ Route::get('/contacts', function () {
 Route::get('/groups', function () {
     return view('groups');
 });
+
+Route::get('/addcontact', function () {
+    return view('addcontact');
+});
+
+Route::get('/addgroup', function () {
+    return view('addgroup');
+});
