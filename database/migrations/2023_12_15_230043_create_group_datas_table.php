@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('group_datas', function (Blueprint $table) {
-            $table->increment('groupId');
+            $table->id('groupId');
             $table->string('groupName');
             $table->string('groupProfilePict');
             $table->string('groupDesc');
@@ -20,14 +20,14 @@ return new class extends Migration
         });
 
         Schema::create('group_members', function (Blueprint $table){
-            $table->increments('groupId');
+            $table->id('groupId');
             $table->integer('username')->unsigned();
             $table->integer('parent_id')->unsigned()->nullable();
             $table->timestamps();
         });
 
         Schema::create('group_comments', function (Blueprint $table){
-            $table->increments('groupId');
+            $table->id('groupId');
             $table->integer('username')->unsigned();
             $table->integer('post_id')->unsigned();
             $table->integer('parent_id')->unsigned()->nullable();

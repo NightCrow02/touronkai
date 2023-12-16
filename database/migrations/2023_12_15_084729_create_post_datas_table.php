@@ -12,20 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('post_datas', function (Blueprint $table) {
-            $table->increment('postId');
-            $table->string('username')->unique();
+            $table->id('forumId')->unique();
+            $table->string('nim');
+            $table->string('forumImg');
             $table->string('title');
-            $table->string('image');
-            $table->text('content');
+            $table->string('content');
+            $table->boolean('like');
             $table->timestamps();
         });
 
-        Schema::create('post_comments', function (Blueprint $table){
-            $table->increments('id');
-            $table->integer('username')->unsigned();
-            $table->integer('post_id')->unsigned();
-            $table->integer('parent_id')->unsigned()->nullable();
-            $table->text('body');
+        Schema::create('forum_comment_datas', function (Blueprint $table) {
+            $table->id('forumId')->unique();
+            $table->string('nim');
+            $table->string('content');
             $table->timestamps();
         });
     }
@@ -36,6 +35,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('post_datas');
-        Schema::dropIfExists('post_comments');
+        Schema::dropIfExists('forum_comment_datas');
     }
 };
