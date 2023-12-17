@@ -4,6 +4,10 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use faker\factory as faker;
 
 class GroupDataSeeder extends Seeder
 {
@@ -15,7 +19,6 @@ class GroupDataSeeder extends Seeder
         $faker = faker::create();
         DB::table('group_datas')->insert([
             [
-                'groupId' => ,
                 'groupName' => $faker->groupName,
                 'groupProfilePict' => '',
                 'groupDesc' => $faker->groupDesc,
@@ -27,7 +30,6 @@ class GroupDataSeeder extends Seeder
         $faker = faker::create();
             DB::table('group_members')->insert([
                 [
-                    'groupId' => ,
                     'username' => $faker->groupName,
                     'parent_id' => '',
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
