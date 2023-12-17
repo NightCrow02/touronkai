@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->string('profile_picture');
             $table->string('fullName');
-            $table->string('email');
             $table->boolean('gender');
             $table->string('division');
             $table->string('generation');

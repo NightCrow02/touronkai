@@ -18,11 +18,48 @@ class UserDataSeeder extends Seeder
     {
         $faker = faker::create();
         DB::table('user_datas')->insert([
-            'nim' => Str::random(10),
-            'email' => Str::random(10).'@binus.ac.id',
-            'password' => Hash::make('password'),
-            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
-        ]);
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'email' => $faker->safeEmail,
+                'password' => Hash::make('password'),
+                'rememberToken' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'email' => $faker->safeEmail,
+                'password' => Hash::make('password'),
+                'rememberToken' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'email' => $faker->safeEmail,
+                'password' => Hash::make('password'),
+                'rememberToken' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'email' => $faker->safeEmail,
+                'password' => Hash::make('password'),
+                'rememberToken' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'email' => $faker->safeEmail,
+                'password' => Hash::make('password'),
+                'rememberToken' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ]
+        ],
+        
+    );
     }
 }
