@@ -16,6 +16,21 @@ class PostDataSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $faker = faker::create();
+        DB::table('user_datas')->insert([
+            [
+                'forumId' => '',
+                'nim' => $faker->nim,
+                'foruming' => $faker->foruming,
+                'title' => $faker->title,
+                'content' => $faker->content,
+                'like' => '',
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ]
+            
+        ],
+        
+    );
     }
 }
