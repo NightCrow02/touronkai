@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class GroupController extends Controller
 {
-    public function list(){
+    public function groupcontroller(){
         $userGroup = group_data::all();
 
         return view('groups', ['userGroup' => $userGroup]);

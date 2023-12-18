@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function list(){
+    public function postcontroller(){
         $userPost = post_data::all();
 
         return view('dashboard', ['userPost' => $userPost]);

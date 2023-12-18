@@ -19,7 +19,21 @@
                         <img src="img/profileimage.png" alt="Friend 1">
                         <div class="friend-info">
                             <div class="friend-details">
-                                <h4>{{$userData -> name}}</h4>
+                                {{-- <h4>{{$userData->$name}}</h4> --}}
+                                @foreach($userData as $user)
+                                    <li>
+                                        <img src="img/profileimage.png" alt="Friend Image">
+                                        <div class="friend-info">
+                                            <div class="friend-details">
+                                                <h4>NIM: {{ $user->nim }}</h4>
+                                                <p>Email: {{ $user->email }}</p>
+                                            </div>
+                                            <div class="text-msg">
+                                                <p>Status</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
                             </div>
                             <div class="text-msg">
                                 <p>Status</p>

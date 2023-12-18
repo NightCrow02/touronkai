@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\user_data;
+use Illuminate\Http\Request;
+use App\Models\UserData;
 
 class UserController extends Controller
 {
-    public function list(){
+    public function index()
+    {
         $userData = user_data::all();
 
-        return view('contacts', ['userData' => $userData]);
+        return view('contacts', compact('userData'));
     }
 }
