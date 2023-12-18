@@ -28,7 +28,7 @@ return new class extends Migration
         Schema::create('group_comments', function (Blueprint $table){
             $table->id('groupId');
             $table->string('username');
-            $table->id('post_id');
+            $table->string('post_id');
             $table->text('body');
             $table->timestamps();
         });
