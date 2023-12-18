@@ -19,8 +19,8 @@ class GroupDataSeeder extends Seeder
         $faker = faker::create();
         DB::table('group_datas')->insert([
             [
-                'groupName' => $faker->groupName,
-                'groupProfilePict' => '',
+                'groupName' => Str::random(10),
+                'groupProfilePict' => 'https://picsum.photos/750/750',
                 'groupDesc' => $faker->groupDesc,
                 'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
@@ -28,14 +28,23 @@ class GroupDataSeeder extends Seeder
         ],
     );
         $faker = faker::create();
-            DB::table('group_members')->insert([
-                [
-                    'username' => $faker->groupName,
-                    'parent_id' => '',
-                    'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-                    'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
-                ]
-            ],
-        );
+        DB::table('group_members')->insert([
+            [
+                'username' => Str::random(10),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ]
+        ],
+    );
+        $faker = faker::create();
+        DB::table('group_comments')->insert([
+            [
+                'username' => Str::random(10),
+                'body' => Str::random(100),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ]
+        ]
+    );
     }
 }

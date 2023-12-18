@@ -21,16 +21,14 @@ return new class extends Migration
 
         Schema::create('group_members', function (Blueprint $table){
             $table->id('groupId');
-            $table->integer('username')->unsigned();
-            $table->integer('parent_id')->unsigned()->nullable();
+            $table->string('username');
             $table->timestamps();
         });
 
         Schema::create('group_comments', function (Blueprint $table){
             $table->id('groupId');
-            $table->integer('username')->unsigned();
-            $table->integer('post_id')->unsigned();
-            $table->integer('parent_id')->unsigned()->nullable();
+            $table->string('username');
+            $table->id('post_id');
             $table->text('body');
             $table->timestamps();
         });
