@@ -19,7 +19,7 @@
                         <img src="img/profileimage.png" alt="Friend 1">
                         <div class="friend-info">
                             <div class="friend-details">
-                                <h4>John Asep</h4>
+                                <h4>{{$userData -> name}}</h4>
                             </div>
                             <div class="text-msg">
                                 <p>Status</p>
