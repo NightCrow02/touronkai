@@ -17,7 +17,7 @@ class PostDataSeeder extends Seeder
     public function run(): void
     {
         $faker = faker::create();
-        DB::table('user_datas')->insert([
+        DB::table('post_datas')->insert([
             [
                 'nim' => (string)rand(1000000000, 2540117565),
                 'forumImg' => 'https://picsum.photos/1366/768',
@@ -66,5 +66,41 @@ class PostDataSeeder extends Seeder
         ],
         
     );
+
+    $faker = faker::create();
+    DB::table('forum_comment_datas')->insert([
+        [
+            'nim' => (string)rand(1000000000, 2540117565),
+            'content' => Str::random(128),
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+        ],
+        [
+            'nim' => (string)rand(1000000000, 2540117565),
+            'content' => Str::random(128),
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+        ],
+        [
+            'nim' => (string)rand(1000000000, 2540117565),
+            'content' => Str::random(128),
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+        ],
+        [
+            'nim' => (string)rand(1000000000, 2540117565),
+            'content' => Str::random(128),
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+        ],
+        [
+            'nim' => (string)rand(1000000000, 2540117565),
+            'content' => Str::random(128),
+            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+        ]
+    ],
+    
+);
     }
 }
