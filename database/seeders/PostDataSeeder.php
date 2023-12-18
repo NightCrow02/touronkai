@@ -19,16 +19,50 @@ class PostDataSeeder extends Seeder
         $faker = faker::create();
         DB::table('user_datas')->insert([
             [
-                'forumId' => '',
-                'nim' => $faker->nim,
-                'foruming' => $faker->foruming,
-                'title' => $faker->title,
-                'content' => $faker->content,
-                'like' => '',
+                'nim' => (string)rand(1000000000, 2540117565),
+                'forumImg' => 'https://picsum.photos/1366/768',
+                'title' => Str::random(10),
+                'content' => Str::random(128),
+                'like' => (boolean)rand(0, 1),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'forumImg' => 'https://picsum.photos/1366/768',
+                'title' => Str::random(10),
+                'content' => Str::random(128),
+                'like' => (boolean)rand(0, 1),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'forumImg' => 'https://picsum.photos/1366/768',
+                'title' => Str::random(10),
+                'content' => Str::random(128),
+                'like' => (boolean)rand(0, 1),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'forumImg' => 'https://picsum.photos/1366/768',
+                'title' => Str::random(10),
+                'content' => Str::random(128),
+                'like' => (boolean)rand(0, 1),
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+            ],
+            [
+                'nim' => (string)rand(1000000000, 2540117565),
+                'forumImg' => 'https://picsum.photos/1366/768',
+                'title' => Str::random(10),
+                'content' => Str::random(128),
+                'like' => (boolean)rand(0, 1),
                 'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
             ]
-            
         ],
         
     );
