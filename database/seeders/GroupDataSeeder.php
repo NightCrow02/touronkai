@@ -21,7 +21,7 @@ class GroupDataSeeder extends Seeder
             [
                 'groupName' => Str::random(10),
                 'groupProfilePict' => 'https://picsum.photos/750/750',
-                'groupDesc' => $faker->groupDesc,
+                'groupDesc' => Str::random(128),
                 'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
             ]
@@ -41,6 +41,7 @@ class GroupDataSeeder extends Seeder
             [
                 'username' => Str::random(10),
                 'body' => Str::random(100),
+                'post_id' => (string)rand(1, 2000),
                 'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
             ]
