@@ -8,8 +8,8 @@
     <div class="login-box">
         <form action="">
             <h2>Add New Contact</h2>
-            <input type="First Name" name="First Name" placeholder="First Name" required>
-            <input type="Last Name" name="Last Name" placeholder="Last Name" required>
+            <input type="NIM" name="NIM" placeholder="NIM" required>
+            <input type="Full Name" name="First Name" placeholder="Full Name" required>
             <input type="Phone Number" name="Phone Number" placeholder="Phone Number" required>
             <button class="regButton" type="submit">Submit</button>
         </form>
