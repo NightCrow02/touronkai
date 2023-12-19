@@ -45,3 +45,7 @@ Route::get('/addcontact', function () {
 Route::get('/addgroup', function () {
     return view('addgroup');
 });
+
+Route::get('/forum', function () {
+    return view('forum');
+});
