@@ -19,6 +19,7 @@
                 <ul>
                     <li>
                         <img src="img/profileimage.png" alt="Friend 1">
+                        <a href="forum" type="button">
                         <div class="friend-info">
                             <div class="friend-details">
                                 <h4>John Doe</h4>
@@ -27,7 +28,9 @@
                             <div class="text-msg">
                                 <p>Hi</p>
                             </div>
+                        </a>
                         </div>
+                        
                     </li>
                     <li>
                         <img src="img/profileimage.png" alt="Friend 1">
